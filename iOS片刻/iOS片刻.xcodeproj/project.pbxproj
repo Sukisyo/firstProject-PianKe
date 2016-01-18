@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04AB57541C48966200E0A366 /* PKLeftMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57531C48966200E0A366 /* PKLeftMusicView.m */; };
-		04AB57581C48D09C00E0A366 /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57571C48D09C00E0A366 /* PKLoginViewController.m */; };
 		04AB575C1C48D79200E0A366 /* PKThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB575B1C48D79200E0A366 /* PKThirdLoginView.m */; };
 		04AB575F1C48DD9200E0A366 /* PKFirstLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB575E1C48DD9200E0A366 /* PKFirstLoginView.m */; };
 		04AB57621C48DFE300E0A366 /* PKSecondLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57611C48DFE300E0A366 /* PKSecondLoginView.m */; };
-		04AB57661C48ECD700E0A366 /* PKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57651C48ECD700E0A366 /* PKRegisterViewController.m */; };
+		04AB576C1C490A0900E0A366 /* PKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57691C490A0900E0A366 /* PKRegisterViewController.m */; };
+		04AB57731C490A2C00E0A366 /* PKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB576F1C490A2C00E0A366 /* PKLoginViewController.m */; };
+		04AB57771C490CAB00E0A366 /* PKRegisterFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57761C490CAB00E0A366 /* PKRegisterFirstView.m */; };
+		04AB577A1C490CBB00E0A366 /* PKRegisterSecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57791C490CBB00E0A366 /* PKRegisterSecondView.m */; };
+		04AB57801C49287A00E0A366 /* PKRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB577F1C49287A00E0A366 /* PKRegisterTextField.m */; };
 		04BEECA51C4731E00099DE23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEECA41C4731E00099DE23 /* main.m */; };
 		04BEECA81C4731E00099DE23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEECA71C4731E00099DE23 /* AppDelegate.m */; };
 		04BEECAE1C4731E00099DE23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BEECAC1C4731E00099DE23 /* Main.storyboard */; };
@@ -130,16 +133,22 @@
 /* Begin PBXFileReference section */
 		04AB57521C48966200E0A366 /* PKLeftMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLeftMusicView.h; sourceTree = "<group>"; };
 		04AB57531C48966200E0A366 /* PKLeftMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLeftMusicView.m; sourceTree = "<group>"; };
-		04AB57561C48D09C00E0A366 /* PKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLoginViewController.h; sourceTree = "<group>"; };
-		04AB57571C48D09C00E0A366 /* PKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginViewController.m; sourceTree = "<group>"; };
 		04AB575A1C48D79200E0A366 /* PKThirdLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKThirdLoginView.h; sourceTree = "<group>"; };
 		04AB575B1C48D79200E0A366 /* PKThirdLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKThirdLoginView.m; sourceTree = "<group>"; };
 		04AB575D1C48DD9200E0A366 /* PKFirstLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKFirstLoginView.h; sourceTree = "<group>"; };
 		04AB575E1C48DD9200E0A366 /* PKFirstLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKFirstLoginView.m; sourceTree = "<group>"; };
 		04AB57601C48DFE300E0A366 /* PKSecondLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSecondLoginView.h; sourceTree = "<group>"; };
 		04AB57611C48DFE300E0A366 /* PKSecondLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSecondLoginView.m; sourceTree = "<group>"; };
-		04AB57641C48ECD700E0A366 /* PKRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRegisterViewController.h; sourceTree = "<group>"; };
-		04AB57651C48ECD700E0A366 /* PKRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRegisterViewController.m; sourceTree = "<group>"; };
+		04AB57681C490A0900E0A366 /* PKRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRegisterViewController.h; sourceTree = "<group>"; };
+		04AB57691C490A0900E0A366 /* PKRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRegisterViewController.m; sourceTree = "<group>"; };
+		04AB576E1C490A2C00E0A366 /* PKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLoginViewController.h; sourceTree = "<group>"; };
+		04AB576F1C490A2C00E0A366 /* PKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLoginViewController.m; sourceTree = "<group>"; };
+		04AB57751C490CAB00E0A366 /* PKRegisterFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRegisterFirstView.h; sourceTree = "<group>"; };
+		04AB57761C490CAB00E0A366 /* PKRegisterFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRegisterFirstView.m; sourceTree = "<group>"; };
+		04AB57781C490CBB00E0A366 /* PKRegisterSecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRegisterSecondView.h; sourceTree = "<group>"; };
+		04AB57791C490CBB00E0A366 /* PKRegisterSecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRegisterSecondView.m; sourceTree = "<group>"; };
+		04AB577E1C49287A00E0A366 /* PKRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRegisterTextField.h; sourceTree = "<group>"; };
+		04AB577F1C49287A00E0A366 /* PKRegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRegisterTextField.m; sourceTree = "<group>"; };
 		04BEECA01C4731E00099DE23 /* iOS片刻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS片刻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BEECA41C4731E00099DE23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BEECA61C4731E00099DE23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -369,8 +378,8 @@
 		04AB57551C48D08600E0A366 /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
-				04AB57561C48D09C00E0A366 /* PKLoginViewController.h */,
-				04AB57571C48D09C00E0A366 /* PKLoginViewController.m */,
+				04AB576D1C490A2C00E0A366 /* controller */,
+				04AB57721C490A2C00E0A366 /* model */,
 				04AB57591C48D0BB00E0A366 /* view */,
 			);
 			path = "登录";
@@ -392,10 +401,56 @@
 		04AB57631C48EC1200E0A366 /* 注册 */ = {
 			isa = PBXGroup;
 			children = (
-				04AB57641C48ECD700E0A366 /* PKRegisterViewController.h */,
-				04AB57651C48ECD700E0A366 /* PKRegisterViewController.m */,
+				04AB57671C490A0900E0A366 /* controller */,
+				04AB576A1C490A0900E0A366 /* model */,
+				04AB576B1C490A0900E0A366 /* view */,
 			);
 			path = "注册";
+			sourceTree = "<group>";
+		};
+		04AB57671C490A0900E0A366 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				04AB57681C490A0900E0A366 /* PKRegisterViewController.h */,
+				04AB57691C490A0900E0A366 /* PKRegisterViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		04AB576A1C490A0900E0A366 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		04AB576B1C490A0900E0A366 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				04AB57751C490CAB00E0A366 /* PKRegisterFirstView.h */,
+				04AB57761C490CAB00E0A366 /* PKRegisterFirstView.m */,
+				04AB57781C490CBB00E0A366 /* PKRegisterSecondView.h */,
+				04AB57791C490CBB00E0A366 /* PKRegisterSecondView.m */,
+				04AB577E1C49287A00E0A366 /* PKRegisterTextField.h */,
+				04AB577F1C49287A00E0A366 /* PKRegisterTextField.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		04AB576D1C490A2C00E0A366 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				04AB576E1C490A2C00E0A366 /* PKLoginViewController.h */,
+				04AB576F1C490A2C00E0A366 /* PKLoginViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		04AB57721C490A2C00E0A366 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		04BEEC971C4731E00099DE23 = {
@@ -941,9 +996,10 @@
 				04BEEE2B1C4741260099DE23 /* AFNetworkReachabilityManager.m in Sources */,
 				04BEED9A1C4734640099DE23 /* MJRefreshNormalHeader.m in Sources */,
 				04BEEDB01C4734640099DE23 /* SDWebImageDownloaderOperation.m in Sources */,
+				04AB577A1C490CBB00E0A366 /* PKRegisterSecondView.m in Sources */,
 				04BEEDB91C4734640099DE23 /* UIView+WebCacheOperation.m in Sources */,
 				04BEEE281C4741260099DE23 /* AFHTTPRequestOperation.m in Sources */,
-				04AB57661C48ECD700E0A366 /* PKRegisterViewController.m in Sources */,
+				04AB576C1C490A0900E0A366 /* PKRegisterViewController.m in Sources */,
 				04BEEDB31C4734640099DE23 /* UIButton+WebCache.m in Sources */,
 				04BEED981C4734640099DE23 /* MJRefreshBackStateFooter.m in Sources */,
 				04BEEDA31C4734640099DE23 /* MJRefreshConst.m in Sources */,
@@ -952,6 +1008,7 @@
 				04BEEE291C4741260099DE23 /* AFHTTPRequestOperationManager.m in Sources */,
 				04BEEE351C4741260099DE23 /* UIImageView+AFNetworking.m in Sources */,
 				04BEEDAD1C4734640099DE23 /* SDWebImageCompat.m in Sources */,
+				04AB57771C490CAB00E0A366 /* PKRegisterFirstView.m in Sources */,
 				04BEEE301C4741260099DE23 /* AFURLSessionManager.m in Sources */,
 				04BEEE341C4741260099DE23 /* UIButton+AFNetworking.m in Sources */,
 				04BEEDAF1C4734640099DE23 /* SDWebImageDownloader.m in Sources */,
@@ -983,6 +1040,7 @@
 				04BEED9F1C4734640099DE23 /* MJDIYAutoFooter.m in Sources */,
 				04BEED881C4734640099DE23 /* MASLayoutConstraint.m in Sources */,
 				04BEED8F1C4734640099DE23 /* MJRefreshBackFooter.m in Sources */,
+				04AB57731C490A2C00E0A366 /* PKLoginViewController.m in Sources */,
 				04BEEE361C4741260099DE23 /* UIProgressView+AFNetworking.m in Sources */,
 				04AB575F1C48DD9200E0A366 /* PKFirstLoginView.m in Sources */,
 				04BEEDA71C4734640099DE23 /* RECommonFunctions.m in Sources */,
@@ -1009,7 +1067,6 @@
 				04BEEE5E1C4775A30099DE23 /* PKLeftMenuViewController.m in Sources */,
 				04BEEE2D1C4741260099DE23 /* AFURLConnectionOperation.m in Sources */,
 				04BEED8B1C4734640099DE23 /* NSArray+MASAdditions.m in Sources */,
-				04AB57581C48D09C00E0A366 /* PKLoginViewController.m in Sources */,
 				04AB575C1C48D79200E0A366 /* PKThirdLoginView.m in Sources */,
 				04AB57541C48966200E0A366 /* PKLeftMusicView.m in Sources */,
 				04BEEE381C4741260099DE23 /* UIWebView+AFNetworking.m in Sources */,
@@ -1022,6 +1079,7 @@
 				04BEEDA81C4734640099DE23 /* RESideMenu.m in Sources */,
 				04BEED9E1C4734640099DE23 /* MJChiBaoZiHeader.m in Sources */,
 				04BEEDB21C4734640099DE23 /* SDWebImagePrefetcher.m in Sources */,
+				04AB57801C49287A00E0A366 /* PKRegisterTextField.m in Sources */,
 				04BEEE651C477D0B0099DE23 /* PKLeftHeadView.m in Sources */,
 				04BEED8E1C4734640099DE23 /* MJRefreshAutoFooter.m in Sources */,
 				04BEED971C4734640099DE23 /* MJRefreshBackNormalFooter.m in Sources */,

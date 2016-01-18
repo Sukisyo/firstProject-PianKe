@@ -67,7 +67,7 @@
 - (void)layoutSubviews {
     WS(ws);
     [_line1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.mas_top).offset(100);
+        make.top.equalTo(ws.mas_top).offset(30);
         make.height.equalTo(1);
         make.left.equalTo(ws.mas_left).offset(38);
         make.right.equalTo(ws.mas_right).offset(-38);
