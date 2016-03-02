@@ -64,6 +64,8 @@
                         Width:(CGFloat)width
                          Font:(UIFont *)font;
 
++ (CGFloat)DIYAutoHeightWithString:(NSString *)string Width:(CGFloat)width Font:(UIFont *)font;
+
 /**
  *  一串字符在一行中正常显示所需要的宽度
  *

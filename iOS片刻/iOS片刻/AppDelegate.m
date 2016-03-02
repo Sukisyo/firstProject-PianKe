@@ -10,6 +10,8 @@
 #import "RESideMenu.h"
 #import "PKLeftMenuViewController.h"
 #import "PKHomeViewController.h"
+#import "PKSuiPianViewController.h"
+#import "PKBaseViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -51,7 +54,29 @@
     [self.window makeKeyAndVisible];
     
 
-    
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"passwd"]&&[[NSUserDefaults standardUserDefaults] valueForKey:@"email"]) {
+    /**
+     *  登录
+     */
+    NSDictionary *dic = @{@"auth" : @"",
+                          @"client" : @"1",
+                          @"deviceid" : @"D34C5085-30AE-4EA6-9E06-BA5B0C841EDA",
+                          @"email" : [[NSUserDefaults standardUserDefaults] valueForKey:@"email"],
+                          @"passwd" :[[NSUserDefaults standardUserDefaults] valueForKey:@"passwd"],
+                          @"version" : @"3.0.6"};
+        
+    [leftMenuViewController POSTHttpRequest:@"http://api2.pianke.me/user/login" dic:dic successBalck:^(id JSON) {
+        NSDictionary *dic = JSON[@"data"];
+        if ([JSON[@"result"] integerValue]) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                                [leftMenuViewController changeMineInfo:[NSURL URLWithString:dic[@"icon"]] coverimg:[NSURL URLWithString:dic[@"coverimg"]] uname:dic[@"uname"]];
+                });
+        }
+        
+    } errorBlock:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
+    }
     
     return YES;
 }

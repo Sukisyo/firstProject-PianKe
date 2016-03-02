@@ -55,7 +55,7 @@
 
 // 重写push方法
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    // 判断是否为根据控制器，如果不是跟控制器酒把tabBar隐藏并添加返回按钮
+    // 判断是否为根据控制器，如果不是根控制器酒把tabBar隐藏并添加返回按钮
      if (self.viewControllers.count) {
          // 隐藏TabBar
          viewController.hidesBottomBarWhenPushed = YES;

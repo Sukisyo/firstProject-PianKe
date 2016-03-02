@@ -43,6 +43,8 @@
  */
 #define RGBAlpha(r, g, b, a)        [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:(a)]
 
+#define AUTH [[NSUserDefaults standardUserDefaults] valueForKey:@"auth"]
+
 #define ISLANDING @"ISLANGDING"
 #define ISLEFTMENUVIEW @"KISLEFT"   //0.337331334
 #define mas_equalTo(...)                 equalTo(MASBoxValue((__VA_ARGS__)))

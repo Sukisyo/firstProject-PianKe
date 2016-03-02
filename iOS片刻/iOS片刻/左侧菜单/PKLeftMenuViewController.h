@@ -10,5 +10,6 @@
 
 @interface PKLeftMenuViewController : PKBaseViewController
 
+- (void)changeMineInfo:(NSURL *)headIconUrl coverimg:(NSURL *)coverimgUrl uname:(NSString *)uname;
 
 @end

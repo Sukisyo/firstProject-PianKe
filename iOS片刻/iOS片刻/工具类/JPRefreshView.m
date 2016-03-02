@@ -85,7 +85,7 @@
 - (UIView *)refreshview{
     if (!_refreshview) {
         _refreshview = [[UIView alloc]initWithFrame:CGRectMake(VIEW_WIDTH/2 - Refrsh_WIDTH/2, VIEW_HEIGHT/2 - Refrsh_HEIGHT/2, Refrsh_WIDTH, Refrsh_HEIGHT)];
-        _refreshview.backgroundColor = RGB(26, 21, 37);
+        _refreshview.backgroundColor = RGBAlpha(1, 1, 1, 0.1);
         _refreshview.layer.masksToBounds = YES;
         _refreshview.layer.cornerRadius = 10;
     }
@@ -124,8 +124,8 @@
 - (NSArray *)refreshIamgesArray {
     
     NSMutableArray *marr = [NSMutableArray array];
-    for (int i = 0; i <= 14; i++) {
-        NSString *name = [NSString stringWithFormat:@"loading_animate_%i",i];
+    for (int i = 0; i <= 28; i++) {
+        NSString *name = [NSString stringWithFormat:@"refresh%i",i];
         [marr addObject:name];
     }
     NSMutableArray *marrImages = [NSMutableArray array];

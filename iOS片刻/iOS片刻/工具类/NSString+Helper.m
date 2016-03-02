@@ -89,6 +89,41 @@
     return newFloat;
 }
 
++ (CGFloat)DIYAutoHeightWithString:(NSString *)string Width:(CGFloat)width Font:(UIFont *)font {
+    //大小
+    CGSize boundRectSize = CGSizeMake(width, MAXFLOAT);
+    //绘制属性（字典）
+//    NSDictionary *fontDict = @{ NSFontAttributeName: font };
+    
+    //段落类型
+    NSMutableParagraphStyle * paragraph = [[NSMutableParagraphStyle alloc] init];
+    //行间距
+    paragraph.lineSpacing = 10;
+    //段落间隔
+    paragraph.paragraphSpacing = 5;
+    //首行缩近
+    paragraph.firstLineHeadIndent = 0;
+    //属性字典（[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f]指定字符串使用的字体，因为iOS9中字体不是黑体是苹果体，不然在iOS9中字符高度计算容易出现错误）
+    NSDictionary * dictA = @{NSFontAttributeName:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f],
+                             //                             NSForegroundColorAttributeName:[UIColor greenColor],
+                             //                             NSBackgroundColorAttributeName:[UIColor grayColor],
+                             NSParagraphStyleAttributeName:paragraph,
+                             //                             NSObliquenessAttributeName:@0.5 //斜体
+                             //                             NSStrokeColorAttributeName:[UIColor whiteColor],
+                             //                             NSStrokeWidthAttributeName:@2,//描边
+                             //                             NSKernAttributeName:@20,//字间距
+                             //                             NSStrikethroughStyleAttributeName:@2//删除线
+                             //                             NSUnderlineStyleAttributeName:@1,//下划线
+                             };
+    
+    //调用方法,得到高度
+    CGFloat newFloat = [string boundingRectWithSize:boundRectSize
+                                            options: NSStringDrawingUsesLineFragmentOrigin
+                        | NSStringDrawingUsesFontLeading
+                                         attributes:dictA context:nil].size.height;
+    return newFloat;
+}
+
 #pragma mark 一串字符在一行中正常显示所需要的宽度 method
 + (CGFloat)autoWidthWithString:(NSString *)string Font:(UIFont *)font {
     

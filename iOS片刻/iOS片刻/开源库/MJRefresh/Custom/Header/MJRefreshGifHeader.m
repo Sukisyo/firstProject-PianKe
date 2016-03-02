@@ -55,7 +55,7 @@
     
     /* 根据图片设置控件的高度 */ 
     UIImage *image = [images firstObject]; 
-    if (image.size.height > self.mj_h) { 
+    if (image.size.height > self.mj_h) {
         self.mj_h = image.size.height; 
     } 
 }
@@ -85,12 +85,14 @@
     
     if (self.gifView.constraints.count) return;
     
+    
+
     self.gifView.frame = self.bounds;
     if (self.stateLabel.hidden && self.lastUpdatedTimeLabel.hidden) {
         self.gifView.contentMode = UIViewContentModeCenter;
     } else {
-        self.gifView.contentMode = UIViewContentModeRight;
         self.gifView.mj_w = self.mj_w * 0.5 - 90;
+        self.gifView.contentMode = UIViewContentModeRight;
     }
 }
 

@@ -36,7 +36,7 @@
 - (void)addAutoLayout {
     WS(weakself);
     [_iconImageButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(CGSizeMake(50, 55));
+        make.size.equalTo(CGSizeMake(50, 50));
         make.top.equalTo(weakself.mas_top).offset(25);
         make.left.equalTo(weakself.mas_left).offset(20);
     }];

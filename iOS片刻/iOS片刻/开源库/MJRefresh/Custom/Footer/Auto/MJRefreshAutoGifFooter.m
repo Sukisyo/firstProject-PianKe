@@ -7,6 +7,7 @@
 //
 
 #import "MJRefreshAutoGifFooter.h"
+#import "Masonry.h"
 
 @interface MJRefreshAutoGifFooter()
 {
